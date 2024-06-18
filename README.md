@@ -10,7 +10,7 @@ yarn start_static
 ### 启动服务
 yarn start_server
 
-###访问项目
+### 访问项目
 chrome 浏览器访问：http://localhost:3000/admin
 
 ### 框架设计
