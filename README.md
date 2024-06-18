@@ -1,23 +1,21 @@
-//  安装淘宝镜像cnpm
-npm install -g cnpm --registry=https://registry.npm.taobao.org
+###  安装依赖
+yarn install
 
-//  安装依赖
-cnpm install
+### 数据库初始化
+yarn init_sql
 
-// 数据库初始化
-npm run init_sql
+### 编译react.js源码
+yarn start_static
 
-// 编译react.js源码
-npm run start_static
+### 启动服务
+yarn start_server
 
-// 启动服务
-npm run start_server
+###访问项目
+chrome 浏览器访问：http://localhost:3000/admin
 
-###### 访问项目
-chrome浏览器访问：http://localhost:3000/admin
+### 框架设计
 
-#### 框架设计
-###### 实现概要
+##### 实现概要
 + koa2搭建服务
 + MySQL作为数据库
     + mysql 5.7版本
@@ -27,7 +25,7 @@ chrome浏览器访问：http://localhost:3000/admin
     + 服务端渲染：ejs作为服务端渲染的模板引擎
     + 前端渲染：用webpack2环境编译react.js动态渲染页面，使用ant-design框架
 
-###### 文件目录设计
+##### 文件目录设计
 ```
 ·
 ├── init # 数据库初始化目录
