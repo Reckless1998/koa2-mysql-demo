@@ -17,6 +17,7 @@ const walkFile = function(pathResolve , mime) {
   for (let [i, item] of files.entries()) {
     // 将文件名按照点（.）拆分成数组
     let itemArr = item.split('\.')
+    console.log('itemArr', itemArr)
 
     // 获取文件的后缀名，如果没有点，itemMime 将为 'undefined'
     let itemMime = (itemArr.length + 1) ? itemArr[itemArr.length - 1] : 'undefined'
@@ -24,7 +25,7 @@ const walkFile = function(pathResolve , mime) {
     // 判断文件的后缀名是否与指定的 mime 相同
     if (mime === itemMime) {
       // 如果相同，将文件名和文件的完整路径添加到 fileList 对象中
-      fileList[ item ] =  pathResolve + item
+      fileList[item] =  pathResolve + item
     }
   }
 

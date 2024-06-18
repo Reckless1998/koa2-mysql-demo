@@ -13,6 +13,7 @@ const eventLog = function(err , sqlFile, index) {
     logger.info(`sql脚本文件: ${sqlFile} 第${index + 1}条脚本 执行成功 ^_^!`)
   }
 }
+
 // 获取所有sql脚本内容
 let sqlContentMap = getSqlContentMap()
 
