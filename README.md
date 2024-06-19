@@ -16,14 +16,14 @@ chrome 浏览器访问：http://localhost:3000/admin
 ### 框架设计
 
 ##### 实现概要
-+ koa2搭建服务
-+ MySQL作为数据库
-    + mysql 5.7版本
++ koa2 搭建服务
++ MySQL 作为数据库
+    + mysql ^8.0 版本
     + 存储普通数据
-    + 存储session登录态数据
+    + 存储 session 登录态数据
 + 渲染
     + 服务端渲染：ejs作为服务端渲染的模板引擎
-    + 前端渲染：用webpack2环境编译react.js动态渲染页面，使用ant-design框架
+    + 前端渲染：用 webpack2 环境编译 react.js 动态渲染页面，使用 ant-design 框架
 
 ##### 文件目录设计
 ```
